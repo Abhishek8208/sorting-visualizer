@@ -1,0 +1,156 @@
+body {
+    min-height: 100vh;
+    background-color: #51c3ec;   
+}
+
+.ui.segment.speed {
+    display: inline-block;
+}
+
+.ui.header {
+    padding: 10px;
+    padding-left: 12px;
+    color: #222;                 
+    background: #fc0404;         
+    font-size: 1.2rem;           
+    font-weight: 600;
+}
+
+.ui.header>.image,
+.ui.header>img {
+    border-radius: 50%;
+    width: 48px;                 
+    height: 48px;
+    border: 2px solid #ccc;      
+}
+
+.ui.icon {
+    padding: 0px;
+    display: inline-block;
+    position: relative;
+    bottom: 2px;
+}
+
+.ui.header>.image+.content,
+.ui.header>img+.content {
+    padding-left: 8px;
+}
+
+.form-range {
+    width: 100%;
+}
+
+i.icon {
+    margin-left: 6px;
+    font-size: 1.5rem;          
+    margin-right: 5px;
+    color: #4a4a4a;              
+}
+
+.eRnhep {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #444;
+    width: 55px;                 
+    height: 55px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 30px 0px;
+    border-radius: 8px;
+    background: #fffbe6;         
+    flex-shrink: 0;
+}
+
+.ui.segment.horzx {
+    padding: 0px;
+    margin: 0px;
+    white-space: nowrap;
+    overflow-x: auto;
+    position: relative;
+    background: #fafafa;         
+}
+
+.nums {
+    margin: 0;
+    position: absolute;
+    top: 42.5%;
+    left: 30px;
+    padding-right: 30px;
+    font-size: 1.05rem;          
+    color: #333;
+}
+
+.form-range {
+    width: 90%;
+}
+
+.tab {
+    width: 22px;
+    display: inline-block;
+}
+
+.ui.segment.foot {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 10;
+    margin: 0px;
+    background: #dbeafe;         
+}
+
+/* Responsive Styles */
+@media (max-width:768px) {
+    .horzx {
+        min-height: 310px;       
+    }
+    .marg {
+        margin-bottom: 35px;
+    }
+    .form-range {
+        width: 78%;
+    }
+    .algorithm {
+        overflow-y: scroll;
+        height: 310px;
+    }
+    .algorithm::-webkit-scrollbar {
+        display: none;
+    }
+    .algorithm {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .ch {
+        margin-bottom: 65px;
+    }
+}
+
+@media (min-width:768px) {
+    .horzx {
+        min-height: 360px;
+    }
+    .content.algo {
+        overflow-y: scroll;
+        height: 165px;
+    }
+    .content.algo::-webkit-scrollbar {
+        display: none;
+    }
+    .content.algo {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
+@media (max-width:576px) {
+    .ui.segment.speed {
+        display: none;
+    }
+    .ui.icon.sort {
+        margin-left: 6px;
+        color: #2563eb;          
+    }
+    .ui.icon.reset {
+        margin-left: 6px;
+        color: #dc2626;          
+    }
+}
